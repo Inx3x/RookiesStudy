@@ -49,11 +49,13 @@ public class PlayerController : MonoBehaviour
 
         //에니메이션 처리
         Animator anim = GetComponent<Animator>();
+        anim.SetFloat("speed", _speed);
     }
     void UpdateIdle()
     {
         //에니메이션 처리
         Animator anim = GetComponent<Animator>();
+        anim.SetFloat("speed", 0);
     }
 
     // Update is called once per frame
